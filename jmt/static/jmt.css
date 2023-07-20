@@ -1,0 +1,90 @@
+*{
+    color: #D3E6FE;
+}
+
+body{
+    width: 100vw;
+    margin: 0;
+    background-color: #1e293b;
+}
+
+#title{
+    background-color: #475569;
+    height: 50px;
+}
+#title > span:nth-child(1){
+    padding: 10px;
+    font-size: xx-large;
+    font-weight: 700;
+}
+#title > span:nth-child(2){
+    padding: 10px;
+    font-size: medium;
+    float: right;
+}
+#readme > div{
+    background-color: #d946ef;
+    float: right;
+    width: 50px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+#townBoard,
+#numBoard,
+#search,
+#resultBoard,
+#readme{
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1em;
+    background-color: #475569;
+    border-radius: 10px;
+}
+#towntitle{
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#selectTown,
+#selectNum{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-content: space-evenly;
+    
+}
+#selectTown > div,
+#selectNum > div{
+    background-color: #1e293b;
+    width: 90px; height: 25px;
+    margin: 5px auto;
+    text-align: center;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+#selectNum > div{
+    width: 70px; height: 25px;
+    margin: 0 auto;
+}
+#search{
+    background-color: #598EF3;
+    text-align: center;
+    font-size: larger;
+    font-weight: 700;
+}
+#resultBoard > div{
+    background-color: #1e293b;
+    padding: 3px;
+    border-radius: 10px;
+    margin: 10px;
+}
+#resultBoard > div > p{
+    background-color: #598EF3;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: medium;
+}

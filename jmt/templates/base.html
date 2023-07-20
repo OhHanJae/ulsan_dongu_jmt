@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMT!</title>
+    <link rel="stylesheet" href="{% static 'jmt.css' %}">
+</head>
+<body>
+    <div id="title">
+        <span>동구 모먹지</span>
+        <span>Made by 오한재</span>
+    </div>
+    <div id="readme">
+        <div id="close">닫기</div>
+        <pre>식당 목록 업데이트 날짜 : 2023.05.03 
+지원하는 지역 : 울산 동구 전역
+
+-선택장애가 있으신 분들을 위해 제작 하였습니다. 
+
+-동구의 일반음식점으로 등록되어 있는 모든 매장이기 때문에
+술집, 편의점, 분식집, 구내식당 등 포함되어 있습니다.
+
+-2023.05.03 기준의 식당들이기에 현재 있는 식당이 없을 수도,
+검색 결과에 나온 식당이 현재 사라졌을 수도 있습니다.
+        </pre>
+    </div>
+    <div id="townBoard">
+        <a id="towntitle">찾을 지역</a>
+        <div id="selectTown">
+            <div class="town" id="town_all">전체</div>
+            <!-- <div class="town" id="town_1">대송동</div> -->
+            <div class="town" id="town_2">동부동</div>
+            <div class="town" id="town_3">방어동</div>
+            <div class="town" id="town_4">서부동</div>
+            <div class="town" id="town_5">일산동</div>
+            <div class="town" id="town_6">전하동</div>
+            <!-- <div class="town" id="town_7">전하1동</div>
+            <div class="town" id="town_8">전하2동</div> -->
+            <div class="town" id="town_9">주전동</div>
+            <div class="town" id="town_10">화정동</div>
+            <!-- <div class="town" id="town_del">초기화</div> -->
+        </div>
+    </div>
+    <div id="numBoard">
+        <div id="numtitle">찾을 매점 수</div>
+        <div id="selectNum">
+            <div class="num" id="num_1">1개</div>
+            <div class="num" id="num_3">3개</div>
+            <div class="num" id="num_5">5개</div>
+            <div class="num" id="num_10">10개</div>
+            <div class="num" id="num_20">20개</div>
+        </div>
+    </div>
+    <div id="search">찾기!</div>
+    <div id="resultBoard">
+        <!-- <div><p>가게 이름 : </p><p>주소 : </p></div> -->
+    </div>
+    
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- My JavaScripts -->
+    <script src="{% static 'jmt.js' %}"></script>
+</body>
+</html>
