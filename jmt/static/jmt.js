@@ -53,7 +53,7 @@ $('#search').click(function(){
     });
 
     $.ajax({
-        url: "get_result",
+        url: "jmt/get_result",
         type: 'GET',
         data: {
             "towns": townAray,

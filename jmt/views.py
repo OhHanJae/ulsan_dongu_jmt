@@ -36,7 +36,7 @@ def result(request):
     towns = request.GET.getlist("towns", 0)
     num = request.GET.get("num", 0)
 
-    db = "../../db.sqlite3"
+    db = "C:/Users/gram/Desktop/JMT/config/db.sqlite3"
     conn = sqlite3.connect(db, isolation_level=None)
     read_data = list()
 
